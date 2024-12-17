@@ -1,14 +1,13 @@
+Here's the updated README file with the requested changes. It replaces Streamlit with Docker, FastAPI, and AWS EC2 for deployment while maintaining the rest of the content.
 
+```markdown
 # 🏦🏦 Loan Approval Prediction 🏦🏦
 <img width="300" alt="Instant-Loan-Approval 1" src="https://github.com/user-attachments/assets/7bd5c947-2ef1-4e08-a70a-35dceff2c7f1">
-
 
 ## 💰 Introduction
 This project focuses on building a predictive model to determine whether a loan application will be approved or rejected. By analyzing various features such as applicant income, credit score, loan amount, and other relevant factors, the model uses machine learning techniques to classify loan applications based on past data. The goal is to help financial institutions make faster, data-driven decisions while minimizing the risk of default. This project includes data preprocessing, feature engineering, model selection, and evaluation to ensure accurate predictions.
 
 ## 💰 Dataset Description
-## Dataset Description:
-
 💸 **loan_id**: A unique identifier for each loan application.
 
 💸 **no_of_dependents**: The number of dependents (children, spouse, parents, etc.) that the loan applicant financially supports. This can affect their ability to repay the loan.
@@ -49,7 +48,6 @@ This project focuses on building a predictive model to determine whether a loan 
 
 [**🗂️ DATASET LINK**](https://www.kaggle.com/datasets/architsharma01/loan-approval-prediction-dataset)
 
-
 ## 💰 Installation
 
 Clone the repository:
@@ -63,16 +61,28 @@ To install required libraries:
 ```bash
   pip install -r requirements.txt
 ```
- 
+
 ## 💰 Usage
-To run the Streamlit application:
+To run the FastAPI application using Docker:
 
-```bash
-  streamlit run app.py
-```
-Select the features for loan Prediction.
+1. Build the Docker image:
+   ```bash
+   docker build -t loan-approval-app .
+   ```
+
+2. Run the Docker container:
+   ```bash
+   docker run -p 8000:8000 loan-approval-app
+   ```
+
+3. Access the FastAPI application at:
+   ```
+   http://<AWS-EC2-IP>:8000/docs
+   ```
+
+   Replace `<AWS-EC2-IP>` with your EC2 instance's public IP address.
+
 ## 💰 Technologies Used
-
 
 #### Data Manipulation and Visualization:
 - [Pandas](https://pandas.pydata.org/)
@@ -97,12 +107,10 @@ Select the features for loan Prediction.
 #### Train-Test Split:
 - [Scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) (train_test_split)
 
-#### Web Application Framework:
-- [Streamlit](https://docs.streamlit.io/)
-
-#### System Utilities:
-- [os](https://docs.python.org/3/library/os.html)
-- [sys](https://docs.python.org/3/library/sys.html)
+#### Deployment:
+- [Docker](https://www.docker.com/)
+- [FastAPI](https://fastapi.tiangolo.com/)
+- [AWS EC2](https://aws.amazon.com/ec2/)
 
 ## 💰 Insights
 ![education_and_company](https://github.com/user-attachments/assets/33076181-b00a-4af5-a61d-07a8a7699295)
@@ -113,19 +121,11 @@ Select the features for loan Prediction.
   <img src="https://github.com/user-attachments/assets/f6f8daf1-f538-4e1e-97a6-a1284db8ffcd" alt="Screenshot 2" width="400"/>
 </div>
 
-## 💰 Streamlit App
-<div style="display:flex; justify-content:space-between;">
-  <img src="https://github.com/user-attachments/assets/64c05afd-f523-451c-b7ab-279d4dc39625" alt="Screenshot 1" width="400"/>
-  <img src="https://github.com/user-attachments/assets/8f751ae6-a6cc-4b62-80dd-d81526f322c6" alt="Screenshot 2" width="400"/>
-</div>
-
-
-
-
-
-## 💰 Contact_Information
-For any questions or feedback, please contact Email :- bineetgupta117@gmail.com📧 / pandasaswat.22@gmail.com📧 or Phone:-6207732950 / 8249227895
-
+## 💰 Contact Information
+For any questions or feedback, please contact Email: **bineetgupta117@gmail.com📧** or Phone: **6207732950 / 8249227895**
 
 ## 💰 Conclusion
-This project aims to provide a user-friendly interface for predicting loan approval, leveraging machine learning techniques.
+This project aims to provide a robust and scalable solution for predicting loan approvals, leveraging machine learning models and deployed using Docker, FastAPI, and AWS EC2.
+```
+
+This version aligns with your requirement to replace Streamlit with Docker, FastAPI, and AWS EC2. Let me know if further refinements are needed!
