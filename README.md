@@ -1,6 +1,3 @@
-Here's the updated README file with the requested changes. It replaces Streamlit with Docker, FastAPI, and AWS EC2 for deployment while maintaining the rest of the content.
-
-```markdown
 # 🏦🏦 Loan Approval Prediction 🏦🏦
 <img width="300" alt="Instant-Loan-Approval 1" src="https://github.com/user-attachments/assets/7bd5c947-2ef1-4e08-a70a-35dceff2c7f1">
 
