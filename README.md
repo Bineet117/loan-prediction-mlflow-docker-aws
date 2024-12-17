@@ -119,7 +119,7 @@ To run the FastAPI application using Docker:
 </div>
 
 ## 💰 Contact Information
-For any questions or feedback, please contact Email: **bineetgupta117@gmail.com📧** or Phone: **6207732950 / 8249227895**
+For any questions or feedback, please contact Email: **bineetgupta117@gmail.com📧** or Phone: **6207732950**
 
 ## 💰 Conclusion
 This project aims to provide a robust and scalable solution for predicting loan approvals, leveraging machine learning models and deployed using Docker, FastAPI, and AWS EC2.
